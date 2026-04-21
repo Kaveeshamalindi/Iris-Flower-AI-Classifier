@@ -79,5 +79,40 @@ Iris-Flower-AI-Classifier/
 
 ---
 
+## 📡 Flask API
+
+### ➤ Home Route
+
+```
+GET /
+```
+
+**Returns:**
+
+```
+Iris Classifier API is running
+```
+
+### ➤ Prediction Route
+
+```
+POST /predict
+```
+
+**Request Body (JSON):**
+
+```
+{
+  "features": [5.1, 3.5, 1.4, 0.2]
+}
+```
+
+**Response:**
+
+```
+{
+  "prediction": "setosa"
+}
+```
 
 
