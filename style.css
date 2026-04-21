@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* LEFT SIDE (BIG) */
+.left {
+    flex: 1.3;
+}
+
+.big-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    min-height: 500px;
+}
+
+input {
+    width: 60%;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 20%;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+/* RIGHT SIDE */
+.right {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.flower {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.flower img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.flower:hover {
+    transform: scale(1.05);
+}
+
+/* FEATURE BOX */
+.info-box {
+    background: #f4f6ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background: #eee;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* MODAL BACKGROUND */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    /* center content */
+    justify-content: center;
+    align-items: center;
+}
+
+/* MODAL BOX */
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    animation: pop 0.3s ease-in-out;
+}
+
+/* CLOSE BUTTON */
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes pop {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Flower Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<h1 class="title">🌸 Iris Flower AI Classifier 🌸</h1>
+
+<div class="main-container">
+
+    <!-- LEFT SIDE (BIG PREDICTION AREA) -->
+    <div class="left">
+
+        <div class="card big-card">
+            <h2>🤖 Prediction System </h2>
+
+            <input type="number" id="sl" placeholder="Sepal Length">
+            <input type="number" id="sw" placeholder="Sepal Width">
+            <input type="number" id="pl" placeholder="Petal Length">
+            <input type="number" id="pw" placeholder="Petal Width">
+            <br><br>
+
+            <button onclick="predict()">Predict</button>
+
+            <br><br>
+            <div class="result" id="result"></div>
+            <div class="error" id="error"></div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <!-- TITLE FIRST -->
+        <h2 class="section-title">🌼 Iris Flower Types </h2>
+        <br>
+
+        <!-- IMAGES -->
+        <div class="gallery">
+
+            <div class="flower" onclick="showInfo('setosa')">
+                <img src="https://images.pexels.com/photos/8122418/pexels-photo-8122418.jpeg">
+                <p>Setosa</p>
+            </div>
+
+            <div class="flower" onclick="showInfo('versicolor')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Iris_versicolor_3.jpg">
+                <p>Versicolor</p>
+            </div>
+
+            <div class="flower" onclick="showInfo('virginica')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Iris_virginica.jpg">
+                <p>Virginica</p>
+            </div>
+
+        </div>
+
+        <!-- FEATURE GUIDE BELOW -->
+        <div class="info-box">
+
+            <h2>📘 Feature Guide</h2>
+
+            <p><b>Sepal Length:</b> Outer leaf length of flower</p>
+            <p><b>Sepal Width:</b> Outer leaf width</p>
+            <p><b>Petal Length:</b> Inner colorful part length</p>
+            <p><b>Petal Width:</b> Inner colorful part width</p>
+
+        </div>
+
+        <div id="popup" class="popup"></div>
+
+    </div>
+
+</div>
+
+<!-- CENTER POPUP MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
