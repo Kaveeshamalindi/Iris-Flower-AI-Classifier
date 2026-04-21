@@ -2,6 +2,12 @@
 
 An end-to-end **Machine Learning** + **Flask Web Application** that classifies Iris flowers into **Setosa**, **Versicolor**, 
 or **Virginica** using an **SVM (Support Vector Machine) model** trained on the classic Iris dataset.
+<br>
+
+<p align="center">
+  <img src="Images/image1.png" width="600">
+</p>
+
 
 ---
 
