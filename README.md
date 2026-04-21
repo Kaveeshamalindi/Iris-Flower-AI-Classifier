@@ -115,4 +115,96 @@ POST /predict
 }
 ```
 
+---
+
+## ▶️ How to Run the Project
+
+1. Clone the Repository
+
+```
+git clone https://github.com/Kaveeshamalindi/Iris-Flower-AI-Classifier.git
+cd Iris-Flower-AI-Classifier
+```
+
+2. Install Dependencies
+
+```
+pip install flask flask-cors numpy scikit-learn
+```
+
+3. Run Flask Server
+
+```
+python app.py
+```
+
+Server will run at:
+
+```
+http://127.0.0.1:5000/
+```
+
+---
+
+## 🌐 Frontend Usage
+
+1. Open index.html in a browser
+2. Enter:
+- Sepal Length
+- Sepal Width
+- Petal Length
+- Petal Width
+3. Click **Predict**
+4. Get instant AI prediction 🎯
+
+---
+
+## 📊 Model Training
+
+The model was trained using the Iris dataset:
+
+Dataset Source:
+
+```
+https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv
+```
+
+Steps:
+
+1. Data exploration & visualization
+2. Train-test split (80/20)
+3. SVM training
+4. Model evaluation (accuracy, confusion matrix)
+5. Save model using pickle
+
+---
+
+## 📈 Model Performance
+
+- High accuracy on test dataset
+- Evaluated using:
+Accuracy Score
+Classification Report
+Confusion Matrix
+
+---
+
+## 🌟 Features
+- Real-time prediction API
+- Simple and clean UI
+- Machine learning model integration
+- Fully responsive frontend
+- Easy to extend with other models
+
+## 📌 Future Improvements
+- Add more ML models (Random Forest, KNN, etc.)
+- Deploy on cloud (Render / Heroku / AWS)
+- Add database logging for predictions
+- Improve UI with React
+
+---
+
+👨‍💻 Author
+
+Kaveesha Malindi
 
