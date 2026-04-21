@@ -204,7 +204,7 @@ Confusion Matrix
 
 ---
 
-👨‍💻 Author
+### 👨‍💻 Author
 
 Kaveesha Malindi
 
