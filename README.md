@@ -202,6 +202,8 @@ Confusion Matrix
 - Fully responsive frontend
 - Easy to extend with other models
 
+---
+
 ## 📌 Future Improvements
 - Add more ML models (Random Forest, KNN, etc.)
 - Deploy on cloud (Render / Heroku / AWS)
